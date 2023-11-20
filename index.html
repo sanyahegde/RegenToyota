@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Google Maps Directions Example with Regenerative Braking Calculation</title>
+ <link rel="stylesheet" href="dashboard.css">
+ <link rel="stylesheet" href="style.css">
+ <style>
+ html, body {
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ }
+ </style>
+</head>
+<body>
+ <div id="floating-panel">
+ <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
+ <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
+ <div id="mode-selector" class="controls">
+ <input type="radio" name="type" id="changemode-walking" checked="checked">
+ <label for="changemode-walking">Walking</label>
+ <input type="radio" name="type" id="changemode-driving">
+ <label for="changemode-driving">Driving</label>
+ </div>
+ <input type="checkbox" id="avoid-highways">
+ <label for="avoid-highways">Regen Mode</label>
+ <button id="calculate-distance">GO</button>
+ <div id="output"></div>
+ <div id="energy-output"></div>
+ </div>
+ <div id="map"></div>
+ <div class="container">
+ <div class="popup" id="popup">
+ <div class="question" id="question">
+ <h2>Your battery is running low! Should I generate a more optimal path?</h2>
+ <div class="button-container">
+ <button type="button" id="yesButton" onclick="generateOptimalPath(true)">Yes</button>
+ <button type="button" id="noButton" onclick="generateOptimalPath(false)">No</button>
+ </div>
+ </div>
+ <div class="content" id="content">
+ <img src="tick.png">
+ <h2 id="messageTitle">New Optimal Path Given!</h2>
+ <p id="message">Tips: Please consider turning off/down the AC/Heater, Seat Warmers, Radio, etc.</p>
+ <p id="message">Make sure to select Regen Mode!</p>
+ </div>
+ </div>
+ </div>
+
+ <!--script>
+ let popup = document.getElementById("popup");
+ let question = document.getElementById("question");
+ let content = document.getElementById("content");
+ let messageTitle = document.getElementById("messageTitle");
+ let message = document.getElementById("message");
+
+ function openPopup() {
+ popup.classList.add("open-popup");
+ }
+
+ function closePopup() {
+ // Clear the content and hide the popup
+ content.style.display = "none";
+ question.style.display = "none";
+ popup.classList.remove("open-popup");
+ }
+
+ function generateOptimalPath(shouldGenerateOptimal) {
+ question.style.display = "none";
+ content.style.display = "block";
+
+ if (shouldGenerateOptimal) {
+ messageTitle.innerText = "New Optimal Path Given!";
+ message.innerText = "Tips: Please consider turning off/down the AC/Heater, Seat Warmers, Radio, etc.";
+ } else {
+ messageTitle.innerText = "Have a safe trip!";
+ message.innerText = "Enjoy your journey and drive safely.";
+ }
+
+ // Automatically close the popup after 5 seconds
+ setTimeout(function() {
+ closePopup();
+ }, 5000);
+ }
+
+ // Show the question as the default content when the page loads
+ askForOptimalPath();
+
+ function askForOptimalPath() {
+ question.style.display = "block";
+ content.style.display = "none";
+ openPopup();
+ }
+ </script-->
+
+ <!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO0kpg3x2O5A1fivZ9L716U69lqNhykJg&libraries=places&callback=initMap" async defer></script>
+ <script src="app.js"></script>
+</body>
+</html>
