@@ -1,0 +1,110 @@
+/* Main styles for the layout */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the map container */
+  #map {
+    height: 100%;
+  }
+  
+  /* Panel styles */
+  /*#floating-panel {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 300px;
+  }*/
+  #floating-panel {
+    position: absolute; /* Use absolute positioning */
+    top: 10px; /* Distance from the top edge of the map */
+    left: 10px; /* Distance from the left edge of the map */
+    z-index: 5; /* Make sure it sits above the map elements */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    width: 250px; /* Or whatever width you prefer */
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+  
+  .controls {
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  }
+  
+  /* Style for the input controls */
+  #origin-input,
+  #destination-input {
+    background-color: #f1f1f1;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 0 11px;
+  }
+  
+  /* Style for the mode selector controls */
+  #mode-selector .controls {
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    line-height: 22px;
+    outline: none;
+    padding-left: 5px;
+  }
+  
+  #mode-selector label {
+    font-size: 13px;
+    color: #444;
+  }
+  
+  /* Style for the buttons */
+  button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional styles for checkbox and results output */
+  #avoid-highways {
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  label[for="avoid-highways"] {
+    cursor: pointer;
+  }
+  
+  #output {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  
