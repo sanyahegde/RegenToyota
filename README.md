@@ -1,7 +1,9 @@
-# RegenToyota
-HACKUTD
+## 🚀 HACKUTD: Toyota's Challenge Solution
 
-This is our HACKUTD solution for Toyota's challenge statement. 
+### REGEN MODEL
 
-Our idea was to create a solution based on an EV vehicle's regenerative braking feature so that users could opt into a route that gives them more mileage to get to their destination. 
-Most often the new route would use surface roads rather than highways so that the car could allow for more miles to not be lost. 
+This is our solution for Toyota's challenge to develop innovative consumer benefits. 
+
+Our vision utilizes the regenerative braking feature of electric vehicles (EVs) to maximize efficiency. We've engineered a system that enables users to choose routes optimized for increased mileage, often favoring surface roads over highways. This smart routing not only extends the range of EVs but also improves the overall driving experience by ensuring minimal energy loss.
+
+Langauges Used: Javascript, HTML, CSS
