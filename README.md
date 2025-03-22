@@ -1,6 +1,4 @@
-## 🚀 HACKUTD: Toyota's Challenge Solution
-
-### REGEN MODEL
+## 🚀 HACKUTD: Toyota's Challenge Solution (REGEN)
 
 ## Project Vision
 
