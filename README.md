@@ -2,19 +2,6 @@
 
 ### REGEN MODEL
 
-This is our solution for Toyota's challenge to develop innovative consumer benefits. We envisioned a model that would improve customer satisfaction by offering intelligent route suggestions, enhancing EV efficiency, and promoting sustainable driving practices.
-
-Our vision utilizes the regenerative braking feature of electric vehicles (EVs) to maximize efficiency. We've engineered a system that allows users to choose routes optimized for increased mileage, favoring surface roads over highways. This smart routing not only extends the range of EVs but also improves the overall driving experience by ensuring minimal energy loss.
-
-Langauges/Tech Used: Javascript, HTML, CSS, Google Maps API, Google Directions API
-
-
-# ⚡ REGEN MODEL
-
-This project was developed as part of Toyota's innovation challenge to create **consumer-first EV experiences**. Our solution focuses on maximizing electric vehicle (EV) efficiency and driver satisfaction through intelligent route planning.
-
----
-
 ## Project Vision
 
 The **REGEN MODEL** leverages the **regenerative braking** capabilities of EVs to:
